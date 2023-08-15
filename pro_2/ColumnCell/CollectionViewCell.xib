@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="CollectionViewCell" customModule="pro_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="70"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="70"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wWS-Pj-53f">
+                        <rect key="frame" x="0.0" y="0.0" width="374" height="70"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flat-color-icons_folder" translatesAutoresizingMaskIntoConstraints="NO" id="SrX-D9-jx1">
+                                <rect key="frame" x="16" y="10" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="R15-3s-xCs"/>
+                                    <constraint firstAttribute="width" constant="50" id="nKP-eZ-PHC"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Playlist item" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIx-IS-TRC">
+                                <rect key="frame" x="74" y="17" width="122" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="122" id="AYz-XH-j2d"/>
+                                    <constraint firstAttribute="height" constant="21" id="F9r-pp-X5H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="231 items" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wi5-P0-ZKx">
+                                <rect key="frame" x="74" y="37" width="122" height="16"/>
+                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="10"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="SrX-D9-jx1" secondAttribute="bottom" constant="10" id="7Gj-G8-4v0"/>
+                            <constraint firstAttribute="height" constant="70" id="Cug-vU-uUh"/>
+                            <constraint firstItem="AIx-IS-TRC" firstAttribute="trailing" secondItem="Wi5-P0-ZKx" secondAttribute="trailing" id="IN3-Y0-FtC"/>
+                            <constraint firstItem="AIx-IS-TRC" firstAttribute="leading" secondItem="SrX-D9-jx1" secondAttribute="trailing" constant="8" symbolic="YES" id="Ioi-WY-ewd"/>
+                            <constraint firstItem="Wi5-P0-ZKx" firstAttribute="top" secondItem="wWS-Pj-53f" secondAttribute="top" constant="37" id="QlF-UM-Myr"/>
+                            <constraint firstItem="Wi5-P0-ZKx" firstAttribute="bottom" secondItem="SrX-D9-jx1" secondAttribute="bottom" constant="-7" id="ZEI-vZ-Eee"/>
+                            <constraint firstItem="AIx-IS-TRC" firstAttribute="leading" secondItem="Wi5-P0-ZKx" secondAttribute="leading" id="hM0-Rz-jaM"/>
+                            <constraint firstItem="AIx-IS-TRC" firstAttribute="top" secondItem="wWS-Pj-53f" secondAttribute="top" constant="17" id="uXs-bt-Nc6"/>
+                            <constraint firstItem="SrX-D9-jx1" firstAttribute="leading" secondItem="wWS-Pj-53f" secondAttribute="leading" constant="16" id="wWg-g6-cGg"/>
+                            <constraint firstItem="SrX-D9-jx1" firstAttribute="top" secondItem="wWS-Pj-53f" secondAttribute="top" constant="10" id="yFY-rV-vo2"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="wWS-Pj-53f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="6VA-tu-44Q"/>
+                <constraint firstAttribute="bottom" secondItem="wWS-Pj-53f" secondAttribute="bottom" id="j91-Kf-Ono"/>
+                <constraint firstItem="wWS-Pj-53f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="mz1-WZ-IKd"/>
+                <constraint firstAttribute="trailing" secondItem="wWS-Pj-53f" secondAttribute="trailing" constant="6" id="ooL-bw-CcE"/>
+            </constraints>
+            <connections>
+                <outlet property="playlistBackground" destination="wWS-Pj-53f" id="3Mc-Ig-Nbc"/>
+                <outlet property="playlistSubTitle" destination="Wi5-P0-ZKx" id="WWg-hN-Kpn"/>
+                <outlet property="playlistTitle" destination="AIx-IS-TRC" id="m5i-Hs-vrf"/>
+            </connections>
+            <point key="canvasLocation" x="466.66666666666669" y="-38.169642857142854"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="flat-color-icons_folder" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

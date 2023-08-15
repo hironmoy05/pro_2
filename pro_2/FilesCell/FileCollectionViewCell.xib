@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="FileCollectionViewCell" id="gTV-IL-0wX" customClass="FileCollectionViewCell" customModule="pro_2" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="shC-u8-bxg">
+                        <rect key="frame" x="0.0" y="0.0" width="380" height="380"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car" translatesAutoresizingMaskIntoConstraints="NO" id="Lt4-6N-brT">
+                                <rect key="frame" x="8" y="8" width="364" height="310"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="364" id="3nf-cS-8St"/>
+                                    <constraint firstAttribute="height" constant="310" id="PT8-u3-u6f"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Video name here if the title is long" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vyq-0p-A4A">
+                                <rect key="frame" x="8" y="326" width="142" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="fAv-cv-Ez8"/>
+                                    <constraint firstAttribute="width" constant="142" id="m6g-1n-RD5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file-attachment-2" translatesAutoresizingMaskIntoConstraints="NO" id="JP0-we-Tf3">
+                                <rect key="frame" x="350" y="336" width="22" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="RDS-Tr-lT5"/>
+                                    <constraint firstAttribute="width" constant="22" id="San-7D-bBk"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="JP0-we-Tf3" secondAttribute="bottom" constant="19" id="GYD-DW-hW2"/>
+                            <constraint firstAttribute="height" constant="380" id="HEK-4m-0zV"/>
+                            <constraint firstItem="JP0-we-Tf3" firstAttribute="top" secondItem="Lt4-6N-brT" secondAttribute="bottom" constant="18" id="NI7-Ba-LON"/>
+                            <constraint firstAttribute="width" constant="380" id="RmT-t2-bOy"/>
+                            <constraint firstItem="Vyq-0p-A4A" firstAttribute="leading" secondItem="shC-u8-bxg" secondAttribute="leading" constant="8" id="TGD-oX-ObW"/>
+                            <constraint firstAttribute="bottom" secondItem="Vyq-0p-A4A" secondAttribute="bottom" constant="8" id="Vlc-f9-GK1"/>
+                            <constraint firstItem="Lt4-6N-brT" firstAttribute="top" secondItem="shC-u8-bxg" secondAttribute="top" constant="8" id="dCq-iY-hMy"/>
+                            <constraint firstAttribute="trailing" secondItem="JP0-we-Tf3" secondAttribute="trailing" constant="8" id="fCY-Cp-yX8"/>
+                            <constraint firstItem="Vyq-0p-A4A" firstAttribute="top" secondItem="Lt4-6N-brT" secondAttribute="bottom" constant="8" symbolic="YES" id="oOK-Ze-Ykx"/>
+                            <constraint firstItem="Lt4-6N-brT" firstAttribute="leading" secondItem="shC-u8-bxg" secondAttribute="leading" constant="8" id="tGR-Mo-UQk"/>
+                            <constraint firstAttribute="trailing" secondItem="Lt4-6N-brT" secondAttribute="trailing" constant="8" id="tpD-Rm-K7J"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="shC-u8-bxg" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ay5-UC-WM3"/>
+                <constraint firstAttribute="trailing" secondItem="shC-u8-bxg" secondAttribute="trailing" id="alJ-wv-dkC"/>
+                <constraint firstItem="shC-u8-bxg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="iS7-3R-KmF"/>
+                <constraint firstAttribute="bottom" secondItem="shC-u8-bxg" secondAttribute="bottom" id="xYR-hH-EaB"/>
+            </constraints>
+            <connections>
+                <outlet property="carTitile" destination="Vyq-0p-A4A" id="Mje-Dk-sC0"/>
+                <outlet property="fileBackgroundView" destination="shC-u8-bxg" id="30Z-Xd-FNN"/>
+                <outlet property="imageView" destination="Lt4-6N-brT" id="DpC-Ox-kZ0"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="93.75"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="car" width="1280" height="672"/>
+        <image name="file-attachment-2" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
